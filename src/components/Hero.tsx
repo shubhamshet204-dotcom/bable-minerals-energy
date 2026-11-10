@@ -151,19 +151,19 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
   return (
     <section className="relative overflow-visible bg-white min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex flex-col justify-between pt-4 sm:pt-10 pb-8 sm:pb-12">
       {/* Background Warehouse Image with Clean Left Fade */}
-      <div className="absolute inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden">
         <img
-          src="/src/assets/images/hero_industrial_warehouse_1793479824050.webp"
+          src="/hero_industrial_warehouse.webp"
           alt="Modern Industrial Logistics Warehouse"
           fetchPriority="high"
           loading="eager"
           decoding="async"
-          className="w-full h-full object-cover object-right-top opacity-90"
+          className="w-full h-full object-cover object-right sm:object-right-top opacity-85 sm:opacity-90"
         />
-        {/* Horizontal White Fade Mask */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 sm:via-white/85 to-white/60 sm:to-transparent" />
+        {/* White Fade Mask - soft top-down fade on mobile for contrast, horizontal fade on desktop */}
+        <div className="absolute inset-0 bg-gradient-to-b from-white/92 via-white/80 to-white/35 sm:bg-gradient-to-r sm:from-white sm:via-white/85 sm:to-transparent" />
         {/* Soft bottom wash into content */}
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-white to-transparent" />
       </div>
 
       {/* Main Content Container (z-30 so search dropdown floats over action cards below) */}
