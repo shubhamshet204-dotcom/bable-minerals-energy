@@ -19,13 +19,13 @@ export const StatsSection: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-14 bg-white border-b border-slate-100">
+    <section ref={sectionRef} className="py-10 sm:py-14 bg-white border-b border-slate-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {companyData.stats.map((stat, idx) => (
             <div
               key={stat.id}
-              className="relative p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
+              className="relative p-4 sm:p-6 rounded-2xl bg-gradient-to-b from-slate-50 to-white border border-slate-200/80 shadow-xs hover:shadow-md transition-all duration-300 hover:-translate-y-1 group"
             >
               <div className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 font-sans tabular-nums mb-2 flex items-baseline">
                 {stat.prefix && <span className="text-teal-600 mr-0.5">{stat.prefix}</span>}

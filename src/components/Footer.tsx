@@ -27,14 +27,14 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote, onOpenUnits, onOpen
   };
 
   return (
-    <footer id="footer" className="bg-[#0B1528] text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <footer id="footer" className="bg-[#0B1528] text-slate-300 pt-10 sm:pt-16 pb-10 sm:pb-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-10 pb-8 sm:pb-12 border-b border-slate-800/80">
           
           {/* Col 1 & 2: Brand Identity & Legal Overview */}
-          <div className="lg:col-span-2 space-y-4">
+          <div className="col-span-2 sm:col-span-2 lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl overflow-hidden shadow-md flex items-center justify-center shrink-0">
                 <img
@@ -249,13 +249,13 @@ export const Footer: React.FC<FooterProps> = ({ onOpenQuote, onOpenUnits, onOpen
         </div>
 
         {/* Bottom Strip: Copyright & Disclaimers */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div className="pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4 text-xs text-slate-500">
           <p>© 2026 Bable Minerals and Energy Pvt Ltd. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-6">
             <span>ISO 9001:2015 Certified Operations</span>
-            <span>·</span>
+            <span className="hidden sm:inline">·</span>
             <span>Zero-Middleman Supply Chain</span>
-            <span>·</span>
+            <span className="hidden sm:inline">·</span>
             <span>Powered by In-House Tech</span>
           </div>
         </div>

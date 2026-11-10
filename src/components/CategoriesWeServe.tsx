@@ -22,9 +22,9 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
       : (categoriesData as Category[]);
 
   return (
-    <section id="categories-section" className="py-12 bg-white border-t border-slate-200/80">
+    <section id="categories-section" className="py-8 sm:py-12 bg-white border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="mb-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-900 mb-2 font-heading">
@@ -46,11 +46,11 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
             >
               {/* Upper Section: Dark Left Card + Right 6-Tile Grid */}
               <div className="flex flex-col lg:flex-row">
-                
+
                 {/* Left: Dark Image Card with Title & Subtitle */}
                 <div
                   onClick={() => onNavigateCategory?.(category.id)}
-                  className="lg:w-64 xl:w-72 shrink-0 relative overflow-hidden bg-slate-950 min-h-[200px] lg:min-h-[220px] p-6 flex flex-col justify-start text-white group cursor-pointer"
+                  className="lg:w-64 xl:w-72 shrink-0 relative overflow-hidden bg-slate-950 min-h-[140px] sm:min-h-[200px] lg:min-h-[220px] p-4 sm:p-6 flex flex-col justify-start text-white group cursor-pointer"
                 >
                   {/* Background Image */}
                   <img
@@ -65,7 +65,7 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
 
                   {/* Category Title & Subtitle */}
                   <div className="relative z-10 pt-2">
-                    <h3 className="text-3xl sm:text-4xl font-black tracking-tight text-white mb-1.5 drop-shadow-xs">
+                    <h3 className="text-2xl sm:text-3xl sm:text-4xl font-black tracking-tight text-white mb-1.5 drop-shadow-xs">
                       {category.name}
                     </h3>
                     <p className="text-xs sm:text-sm font-semibold text-slate-200/95 leading-snug drop-shadow-2xs">
@@ -75,8 +75,8 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
                 </div>
 
                 {/* Right: Grid of Sub-Category Image Tiles (6 Items Max Per Row to avoid awkward whitespace) */}
-                <div className="flex-1 p-5 sm:p-6 bg-white flex items-center">
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3.5 sm:gap-4 w-full">
+                <div className="flex-1 p-3 sm:p-5 bg-white flex items-center">
+                  <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-3.5 w-full">
                     {category.items.slice(0, 6).map((item) => (
                       <button
                         key={item.id}
@@ -115,7 +115,7 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
                         </div>
 
                         {/* Centered Tile Label */}
-                        <span className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1">
+                        <span className="text-[10px] sm:text-xs font-bold text-slate-900 group-hover:text-blue-600 transition-colors line-clamp-1 leading-tight text-center w-full px-0.5">
                           {item.name}
                         </span>
                       </button>
@@ -127,7 +127,7 @@ export const CategoriesWeServe: React.FC<CategoriesWeServeProps> = ({
 
               {/* Bottom Light-Blue Strip (Matches Screenshot Exactly) */}
               <div className="bg-[#F0F9FF] border-t border-sky-100 px-5 sm:px-6 py-3 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs text-slate-800 font-semibold">
-                
+
                 {/* Left Side Counts */}
                 <div className="flex flex-wrap items-center gap-3 sm:gap-4">
                   <div className="flex items-center gap-1.5 text-slate-800 font-semibold">

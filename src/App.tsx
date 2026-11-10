@@ -659,7 +659,7 @@ function MainContent() {
   // PUBLIC STOREFRONT HOMEPAGE
   // --------------------------------------------------------------------------
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-teal-500 selection:text-white relative pb-16 md:pb-0">
+    <div className="min-h-screen flex flex-col bg-white text-slate-800 antialiased selection:bg-teal-500 selection:text-white relative pb-20 md:pb-0">
       
       {/* 1. Sticky Gradient Navbar */}
       <Navbar

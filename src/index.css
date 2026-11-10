@@ -86,3 +86,27 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
 }
+
+/* Hide scrollbar utility (used on chip rows, horizontal scrollables) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe-area padding for iPhone bottom notch */
+.pb-safe {
+  padding-bottom: max(0.375rem, env(safe-area-inset-bottom));
+}
+
+/* Touch tap highlight removal for mobile buttons */
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Prevent horizontal overflow on mobile */
+body {
+  overflow-x: hidden;
+}

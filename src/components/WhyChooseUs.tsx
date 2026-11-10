@@ -15,11 +15,11 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onOpenQuote }) => {
   };
 
   return (
-    <section id="why-choose-us" className="py-20 bg-white">
+    <section id="why-choose-us" className="py-12 sm:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-xs font-bold uppercase tracking-wider mb-3">
             Enterprise Value Proposition
           </div>
@@ -33,11 +33,11 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onOpenQuote }) => {
         </div>
 
         {/* 4 Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
           {companyData.whyChooseUs.map((item, idx) => (
             <div
               key={item.id}
-              className="group bg-white rounded-2xl p-7 border border-slate-200/90 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between relative overflow-hidden"
+              className="group bg-white rounded-2xl p-5 sm:p-7 border border-slate-200/90 shadow-xs hover:shadow-xl transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between relative overflow-hidden"
             >
               {/* Top Accent Gradient Border */}
               <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-teal-400 to-blue-600 opacity-0 group-hover:opacity-100 transition-opacity" />

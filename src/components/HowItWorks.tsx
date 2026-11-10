@@ -8,11 +8,11 @@ interface HowItWorksProps {
 
 export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenQuote }) => {
   return (
-    <section id="how-it-works" className="py-20 bg-slate-50 border-t border-b border-slate-200">
+    <section id="how-it-works" className="py-12 sm:py-20 bg-slate-50 border-t border-b border-slate-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-16">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-700 text-xs font-bold uppercase tracking-wider mb-3">
             Streamlined Fulfillment Engine
           </div>
@@ -26,7 +26,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({ onOpenQuote }) => {
         </div>
 
         {/* 4 Steps Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative">
           {companyData.howItWorks.map((item, idx) => (
             <div
               key={item.step}

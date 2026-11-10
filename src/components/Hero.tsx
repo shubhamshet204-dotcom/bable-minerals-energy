@@ -149,7 +149,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
   };
 
   return (
-    <section className="relative overflow-visible bg-white min-h-[580px] lg:min-h-[640px] flex flex-col justify-between pt-6 sm:pt-10 pb-12">
+    <section className="relative overflow-visible bg-white min-h-[520px] sm:min-h-[580px] lg:min-h-[640px] flex flex-col justify-between pt-4 sm:pt-10 pb-8 sm:pb-12">
       {/* Background Warehouse Image with Clean Left Fade */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <img
@@ -161,7 +161,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
           className="w-full h-full object-cover object-right-top opacity-90"
         />
         {/* Horizontal White Fade Mask */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/85 sm:via-white/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/90 sm:via-white/85 to-white/60 sm:to-transparent" />
         {/* Soft bottom wash into content */}
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-white to-transparent" />
       </div>
@@ -169,7 +169,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
       {/* Main Content Container (z-30 so search dropdown floats over action cards below) */}
       <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="max-w-2xl lg:max-w-3xl pt-2 sm:pt-6">
-          
+
           {/* Badge: "Powered by In-House Technology" */}
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 border border-blue-200/80 shadow-xs mb-4 text-xs font-semibold text-blue-800 backdrop-blur-xs">
             <span className="flex h-2 w-2 rounded-full bg-teal-500 animate-pulse"></span>
@@ -177,7 +177,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
           </div>
 
           {/* Heading: India's Leading (blue italic) + B2B Commerce Platform (teal gradient) */}
-          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-4 sm:mb-6 font-heading">
+          <h1 className="text-2xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-[1.1] mb-3 sm:mb-6 font-heading">
             <span className="block text-[#0B6FE8] font-black tracking-tight">
               {companyData.company.headlinePrefix}
             </span>
@@ -200,7 +200,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
               <div className="pl-3 sm:pl-4 pr-1 sm:pr-2 text-slate-400 shrink-0">
                 <Search className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
               </div>
-              
+
               <input
                 type="text"
                 value={searchQuery}
@@ -285,9 +285,9 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
         </div>
       </div>
 
-      {/* Bottom Hero Action Cards (Procurement, Financing, Revenue Generation) - z-10 so top container z-30 dropdown always renders above */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Bottom Hero Action Cards — stack vertically on mobile, 3 col on md+ */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-6 sm:mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           {companyData.heroActionCards.map((card) => {
             const isActive = activeCardId === card.id;
             return (
@@ -297,21 +297,19 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
                   setActiveCardId(card.id);
                   onSelectActionCard(card.id);
                 }}
-                className={`group relative rounded-2xl p-4 sm:p-5 transition-all duration-200 cursor-pointer shadow-md hover:shadow-xl hover:-translate-y-1 ${
-                  isActive
+                className={`group relative rounded-2xl p-3 sm:p-5 transition-all duration-200 cursor-pointer shadow-md hover:shadow-xl hover:-translate-y-1 ${isActive
                     ? 'bg-gradient-to-r from-teal-500/90 to-blue-600 text-white ring-2 ring-blue-400'
                     : 'bg-white/95 text-slate-800 border border-slate-200/90 hover:border-blue-300 backdrop-blur-sm'
-                }`}
+                  }`}
               >
                 <div className="flex items-center justify-between">
                   {/* Left: Icon + Titles */}
                   <div className="flex items-center gap-3.5">
                     <div
-                      className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm transition-transform group-hover:scale-105 ${
-                        isActive
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 shadow-sm transition-transform group-hover:scale-105 ${isActive
                           ? 'bg-white/20 text-white'
                           : 'bg-teal-50 text-teal-600 border border-teal-100'
-                      }`}
+                        }`}
                     >
                       {card.id === 'procurement' && <Truck className="w-6 h-6" />}
                       {card.id === 'financing' && <Wallet className="w-6 h-6" />}
@@ -319,16 +317,14 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
                     </div>
                     <div>
                       <h2
-                        className={`text-base sm:text-lg font-bold leading-tight ${
-                          isActive ? 'text-white' : 'text-slate-900 group-hover:text-blue-600'
-                        }`}
+                        className={`text-base sm:text-lg font-bold leading-tight ${isActive ? 'text-white' : 'text-slate-900 group-hover:text-blue-600'
+                          }`}
                       >
                         {card.title}
                       </h2>
                       <p
-                        className={`text-xs font-semibold ${
-                          isActive ? 'text-teal-100 italic' : 'text-slate-500 italic'
-                        }`}
+                        className={`text-xs font-semibold ${isActive ? 'text-teal-100 italic' : 'text-slate-500 italic'
+                          }`}
                       >
                         {card.subtitle}
                       </p>
@@ -337,20 +333,18 @@ export const Hero: React.FC<HeroProps> = ({ onSearch, onSelectActionCard }) => {
 
                   {/* Right: Round arrow button */}
                   <div
-                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform group-hover:translate-x-1 ${
-                      isActive
+                    className={`w-9 h-9 rounded-full flex items-center justify-center shrink-0 transition-transform group-hover:translate-x-1 ${isActive
                         ? 'bg-white text-blue-600 shadow-sm'
                         : 'bg-blue-50 text-blue-600 group-hover:bg-blue-600 group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     <ArrowRight className="w-4 h-4" />
                   </div>
                 </div>
 
                 <p
-                  className={`mt-2.5 text-xs line-clamp-2 ${
-                    isActive ? 'text-blue-50/90' : 'text-slate-600'
-                  }`}
+                  className={`mt-2 text-xs line-clamp-2 hidden sm:block ${isActive ? 'text-blue-50/90' : 'text-slate-600'
+                    }`}
                 >
                   {card.description}
                 </p>
