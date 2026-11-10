@@ -1,0 +1,332 @@
+[
+  {
+    "id": "metals",
+    "name": "Metals",
+    "subtitle": "Ferrous and Non-Ferrous",
+    "description": "Comprehensive range of structural steel, flat products, non-ferrous ingots, and secondary alloys with mill test certificates.",
+    "bgImage": "/Categories_photos/Stainless steel.webp",
+    "supplierCount": "4500+ Suppliers, 50+ Brands",
+    "manufacturingCount": "5 Manufacturing Units, 4 In-House Brands",
+    "manufacturingLinkText": "View Manufacturing Units",
+    "items": [
+      {
+        "id": "long-steel",
+        "name": "Long Steel",
+        "spec": "TMT Fe 550D, Beams, Angles, Channels, Wire Rods",
+        "badge": "Hot Rolled",
+        "imageUrl": "/Categories_photos/Long steel.webp",
+        "fallbackBg": "from-slate-700 to-slate-900",
+        "icon": "Layers"
+      },
+      {
+        "id": "flat-steel",
+        "name": "Flat Steel",
+        "spec": "HR Coils, CR Coils, GP/GI Sheets, Chequered Plates",
+        "badge": "Prime Quality",
+        "imageUrl": "/Categories_photos/flat.webp",
+        "fallbackBg": "from-slate-800 to-blue-950",
+        "icon": "Disc"
+      },
+      {
+        "id": "stainless-steel",
+        "name": "Stainless Steel",
+        "spec": "SS 304, SS 316, SS 201 Plates, Pipes & Fittings",
+        "badge": "ASTM Standard",
+        "imageUrl": "/Categories_photos/Stainless.webp",
+        "fallbackBg": "from-zinc-700 to-slate-900",
+        "icon": "ShieldCheck"
+      },
+      {
+        "id": "aluminium",
+        "name": "Aluminium",
+        "spec": "Ingots EC 99.7%, Billets, Wire Rods, Extrusions",
+        "badge": "NALCO / Hindalco",
+        "imageUrl": "/Categories_photos/Aluminium.webp",
+        "fallbackBg": "from-slate-600 to-slate-800",
+        "icon": "Boxes"
+      },
+      {
+        "id": "copper",
+        "name": "Copper",
+        "spec": "Cathodes Grade A, CC Rods 8mm, Scrap & Tubes",
+        "badge": "99.99% LME",
+        "imageUrl": "/Categories_photos/Copper.webp",
+        "fallbackBg": "from-amber-800 to-orange-950",
+        "icon": "CircleDot"
+      },
+      {
+        "id": "zinc",
+        "name": "Zinc",
+        "spec": "Special High Grade (SHG 99.995%), Jumbo Ingots",
+        "badge": "HZL Certified",
+        "imageUrl": "/Categories_photos/Zinc.webp",
+        "fallbackBg": "from-slate-700 to-cyan-950",
+        "icon": "Component"
+      }
+    ]
+  },
+  {
+    "id": "chemicals",
+    "name": "Chemicals",
+    "subtitle": "Industrial and Specialty Chemicals",
+    "description": "High-purity solvents, organic intermediates, agrochemical precursors, polymer resins, and performance bitumen for infrastructure.",
+    "bgImage": "https://images.unsplash.com/photo-1581093588401-fbb62a02f120?w=800&auto=format&fit=crop&q=80",
+    "supplierCount": "1800+ Suppliers, 30+ Brands",
+    "manufacturingCount": "5 Manufacturing Units, 4 In-House Brands",
+    "manufacturingLinkText": "View Manufacturing Units",
+    "items": [
+      {
+        "id": "bulk-chemicals",
+        "name": "Bulk Chemicals",
+        "spec": "Caustic Soda Lye, Sulfuric Acid, Methanol, Acetic Acid",
+        "badge": "Direct Tankers",
+        "imageUrl": "/Categories_photos/Bulk chemicals.webp",
+        "fallbackBg": "from-emerald-800 to-teal-950",
+        "icon": "FlaskConical"
+      },
+      {
+        "id": "agrochemicals",
+        "name": "Agrochemicals",
+        "spec": "Fertilizer technicals, Technical Glyphosate, Urea Prills",
+        "badge": "Bulk ISO Tanks",
+        "imageUrl": "/Categories_photos/agrochemicals.webp",
+        "fallbackBg": "from-green-800 to-slate-900",
+        "icon": "Sprout"
+      },
+      {
+        "id": "bitumen",
+        "name": "Bitumen",
+        "spec": "VG-10, VG-30, VG-40, Emulsion SS-1 & Bulk Cargo",
+        "badge": "IOCL / BPCL Spec",
+        "imageUrl": "/Categories_photos/bitumen.webp",
+        "fallbackBg": "from-zinc-900 to-stone-900",
+        "icon": "Truck"
+      },
+      {
+        "id": "lubricants",
+        "name": "Lubricants",
+        "spec": "Industrial Gear Oils, Hydraulic Fluid, Engine Oils",
+        "badge": "ISO VG 68/46",
+        "imageUrl": "/Categories_photos/lubricants.webp",
+        "fallbackBg": "from-amber-700 to-yellow-950",
+        "icon": "Droplets"
+      },
+      {
+        "id": "polymers",
+        "name": "Polymers",
+        "spec": "HDPE, LDPE, LLDPE, Polypropylene PP, PVC Resin SG-5",
+        "badge": "Prime Granules",
+        "imageUrl": "/Categories_photos/polymers.webp",
+        "fallbackBg": "from-cyan-800 to-blue-950",
+        "icon": "Hexagon"
+      },
+      {
+        "id": "solvents-coal",
+        "name": "Solvents & Intermediates",
+        "spec": "Toluene, Acetone, Hexane, Activated Carbon & Fine Chemicals",
+        "badge": "Purity 99.5%+",
+        "imageUrl": "/Categories_photos/solvents.webp",
+        "fallbackBg": "from-slate-800 to-slate-950",
+        "icon": "Flame"
+      }
+    ]
+  },
+  {
+    "id": "energy-minerals",
+    "name": "Energy & Minerals",
+    "subtitle": "Solid Fuel, Ores & Metallurgical Fluxes",
+    "description": "Consistent caloric energy commodities, industrial calcined minerals, and smelter raw feedstocks with port logistics.",
+    "bgImage": "https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?w=800&auto=format&fit=crop&q=80",
+    "supplierCount": "2200+ Suppliers, 40+ Brands",
+    "manufacturingCount": "6 Strategic Port Terminal Hubs",
+    "manufacturingLinkText": "View Port Stocking Hubs",
+    "items": [
+      {
+        "id": "thermal-coal",
+        "name": "Thermal Coal",
+        "spec": "Indonesian 3800-5800 GAR, South African RB1 / RB2, Domestic WCL/SECL",
+        "badge": "Port Discharged",
+        "imageUrl": "/Categories_photos/thermal coal.webp",
+        "fallbackBg": "from-stone-900 to-slate-900",
+        "icon": "Flame"
+      },
+      {
+        "id": "coking-coal",
+        "name": "Coking Coal",
+        "spec": "Low-ash metallurgical coal, Australian Hard Coking Coal (HCC)",
+        "badge": "CSR 65+",
+        "imageUrl": "/Categories_photos/cooking coal.webp",
+        "fallbackBg": "from-neutral-900 to-zinc-950",
+        "icon": "Pickaxe"
+      },
+      {
+        "id": "petcoke",
+        "name": "Petcoke",
+        "spec": "US Gulf Fuel Grade (0.5% - 4.5% Sulfur), Indian Reliance Grade",
+        "badge": "High GCV 8200+",
+        "imageUrl": "/Categories_photos/petcoke.webp",
+        "fallbackBg": "from-zinc-800 to-slate-900",
+        "icon": "Cpu"
+      },
+      {
+        "id": "limestone",
+        "name": "Limestone",
+        "spec": "Steel Grade Quicklime 92% CaO, Hydrated Lime, Calcined Dolomite",
+        "badge": "Mines Direct",
+        "imageUrl": "https://images.unsplash.com/photo-1590496793929-36417d3117de?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-slate-400 to-zinc-700",
+        "icon": "Mountain"
+      },
+      {
+        "id": "gypsum",
+        "name": "Gypsum",
+        "spec": "Natural Mineral Gypsum 85% Purity, Chemical Phosphogypsum",
+        "badge": "Cement Grade",
+        "imageUrl": "https://images.unsplash.com/photo-1618090584126-129cd1f3fbae?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-200 to-stone-600",
+        "icon": "Box"
+      },
+      {
+        "id": "iron-ore-pellets",
+        "name": "Iron Ore Pellets",
+        "spec": "Fe 64% - 65% Blast Furnace & DRI Pellets, Sinter Fines",
+        "badge": "High CCS 250+",
+        "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-red-950 to-stone-900",
+        "icon": "CircleDot"
+      }
+    ]
+  },
+  {
+    "id": "agri",
+    "name": "Agri",
+    "subtitle": "Bulk Grains, Edible Oils & Feeds",
+    "description": "Bulk procurement for institutional food processors, animal feed compounders, and beverage manufacturers.",
+    "bgImage": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=800&auto=format&fit=crop&q=80",
+    "supplierCount": "3100+ Mandis & Mills, 45+ Brands",
+    "manufacturingCount": "8 Modern Food Processing Hubs",
+    "manufacturingLinkText": "View Processing Centers",
+    "items": [
+      {
+        "id": "wheat",
+        "name": "Wheat & Grains",
+        "spec": "Mill-quality Sharbati, Lokwan, Durum Wheat, Maida & Atta",
+        "badge": "FSSAI Compliant",
+        "imageUrl": "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-600 to-yellow-800",
+        "icon": "Wheat"
+      },
+      {
+        "id": "rice",
+        "name": "Rice & Basmati",
+        "spec": "1121 Pusa Basmati, Sella, Sugandha, IR-64 Parboiled Rice",
+        "badge": "Aged 1-2 Yrs",
+        "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-200 to-stone-400",
+        "icon": "Sparkles"
+      },
+      {
+        "id": "edible-oils",
+        "name": "Refined Edible Oils",
+        "spec": "Crude Palm Oil (CPO), Refined Mustard Oil, Degummed Soya Oil",
+        "badge": "Bulk Tankers",
+        "imageUrl": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-yellow-600 to-amber-900",
+        "icon": "Droplet"
+      },
+      {
+        "id": "sugar",
+        "name": "Industrial Sugar",
+        "spec": "M-30, S-30 Refined Plantation White Crystal Sugar",
+        "badge": "ICUMSA 45/100",
+        "imageUrl": "/Categories_photos/industrial sugar.webp",
+        "fallbackBg": "from-slate-200 to-blue-200",
+        "icon": "Box"
+      },
+      {
+        "id": "maize",
+        "name": "Feed Grade Maize",
+        "spec": "Yellow corn, moisture <14%, aflatoxin <20ppb for poultry & starch",
+        "badge": "Starch Grade",
+        "imageUrl": "https://images.unsplash.com/photo-1551754655-cd27e38d2076?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-500 to-yellow-700",
+        "icon": "Sun"
+      },
+      {
+        "id": "soya-meal",
+        "name": "Cotton & Feeds",
+        "spec": "Hi-Pro DOC Soya 48% protein, raw cotton bales, animal feed",
+        "badge": "High Protein",
+        "imageUrl": "https://images.unsplash.com/photo-1606041008023-472dfb5e530f?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-stone-600 to-amber-950",
+        "icon": "Layers"
+      }
+    ]
+  },
+  {
+    "id": "industrial-materials",
+    "name": "Industrial Goods",
+    "subtitle": "Construction, Machinery & Consumables",
+    "description": "Essential raw materials and consumables for infrastructure projects, factory operations, and manufacturing plants.",
+    "bgImage": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&auto=format&fit=crop&q=80",
+    "supplierCount": "2500+ Suppliers, 60+ Brands",
+    "manufacturingCount": "10 Regional Distribution Depots",
+    "manufacturingLinkText": "View Depots",
+    "items": [
+      {
+        "id": "construction-materials",
+        "name": "Construction Materials",
+        "spec": "OPC 53 Grade Cement, Ready Mix Concrete, AAC Blocks",
+        "badge": "BIS Certified",
+        "imageUrl": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-slate-500 to-zinc-800",
+        "icon": "Building2"
+      },
+      {
+        "id": "machinery-engineering-products",
+        "name": "Machinery & Equipment",
+        "spec": "Industrial Centrifugal Pumps, Electric Motors, Bearings",
+        "badge": "Heavy Duty",
+        "imageUrl": "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-blue-900 to-slate-900",
+        "icon": "Cpu"
+      },
+      {
+        "id": "packaging-materials",
+        "name": "Packaging Materials",
+        "spec": "HDPE Woven Bags 50kg, Corrugated Boxes, Stretch Wrap",
+        "badge": "Export Grade",
+        "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-700 to-stone-800",
+        "icon": "Box"
+      },
+      {
+        "id": "paper-pulp-wood",
+        "name": "Paper & Pulp",
+        "spec": "Kraft Paper 120-250 GSM, Duplex Board, Bleached Softwood Pulp",
+        "badge": "FSC Certified",
+        "imageUrl": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&auto=format&fit=crop&q=80",
+        "fallbackBg": "from-amber-200 to-stone-600",
+        "icon": "Layers"
+      },
+      {
+        "id": "industrial-safety-consumables",
+        "name": "Industrial Safety",
+        "spec": "IS 15298 Safety Boots, Nitrile Gloves, E7018 Welding Electrodes",
+        "badge": "CE & IS Certified",
+        "imageUrl": "/Categories_photos/industrial saftey.webp",
+        "fallbackBg": "from-slate-800 to-slate-950",
+        "icon": "ShieldCheck"
+      },
+      {
+        "id": "industrial-gases",
+        "name": "Gases & Consumables",
+        "spec": "Oxygen, Nitrogen, Argon, Acetylene Cylinders",
+        "badge": "Industrial Grade",
+        "imageUrl": "/Categories_photos/gases.webp",
+        "fallbackBg": "from-cyan-800 to-blue-950",
+        "icon": "Cpu"
+      }
+    ]
+  }
+]

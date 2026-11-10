@@ -1,0 +1,44 @@
+{
+  "clientLogos": [
+    { "name": "Larsen & Toubro", "tag": "Infra & Defense", "initials": "L&T", "logoUrl": "/logos_brand/L&T.png" },
+    { "name": "Tata Projects", "tag": "Industrial EPC", "initials": "TATA", "logoUrl": "/logos_brand/tata.png" },
+    { "name": "JSW Infrastructure", "tag": "Ports & Heavy Industry", "initials": "JSW", "logoUrl": "/logos_brand/jsw.jpg" },
+    { "name": "Adani Enterprises", "tag": "Energy & Minerals", "initials": "ADANI", "logoUrl": "/logos_brand/adani.jpg" },
+    { "name": "Jindal Steel & Power", "tag": "Metals & Mining", "initials": "JSPL", "logoUrl": "/logos_brand/jindal.png" },
+    { "name": "UltraTech Cement", "tag": "Building Materials", "initials": "ULTRATECH", "logoUrl": "/logos_brand/ultratech.jpg" },
+    { "name": "Godrej Agrovet", "tag": "Agri & Chemicals", "initials": "GODREJ", "logoUrl": "/logos_brand/godrej.png" },
+    { "name": "Aarti Industries", "tag": "Specialty Chemicals", "initials": "AARTI", "logoUrl": "/logos_brand/aarti.jpg" }
+  ],
+  "testimonials": [
+    {
+      "id": "1",
+      "quote": "Bable Minerals streamlined our steel rebar procurement for our flyover and metro EPC packages. Getting live EX-Delhi mill rates and automated test certificates cut our turnaround time by 4 days per consignment.",
+      "author": "Rajeshwar Singhania",
+      "role": "VP - Supply Chain & Procurement",
+      "company": "Apex Mega Infrastructure Projects",
+      "location": "New Delhi",
+      "metric": "14,500 MT Delivered",
+      "saving": "4.2% Cost Advantage"
+    },
+    {
+      "id": "2",
+      "quote": "Our captive boiler required continuous supply of 5000 GAR imported steam coal. Bable's dedicated Kandla port rake booking ensured zero production downtime through monsoon peaks with transparent calorific value assays.",
+      "author": "Mahesh Bhattacharya",
+      "role": "Director of Plant Operations",
+      "company": "Sudarshan Synthetic Textiles Ltd",
+      "location": "Surat, Gujarat",
+      "metric": "32,000 MT Annual Fuel",
+      "saving": "99.8% Uptime SLA"
+    },
+    {
+      "id": "3",
+      "quote": "The 60-day unsecured working capital facility integrated right into Bable's order portal allowed us to scale our polymer molding output by 40% without stretching our existing bank limits.",
+      "author": "Kavita Ramachandran",
+      "role": "Chief Financial Officer",
+      "company": "Everest Precision Polymers",
+      "location": "Chennai, Tamil Nadu",
+      "metric": "₹18 Cr Credit Extended",
+      "saving": "40% Output Expansion"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bable Minerals & Energy",
+  "description": "India's leading B2B commerce platform for industrial minerals, metals, chemicals, and energy procurement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

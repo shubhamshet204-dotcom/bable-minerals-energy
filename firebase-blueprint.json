@@ -1,0 +1,143 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile with B2B enterprise details",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 128 },
+        "displayName": { "type": "string", "maxLength": 128 },
+        "companyName": { "type": "string", "maxLength": 128 },
+        "gstin": { "type": "string", "maxLength": 15 },
+        "phone": { "type": "string", "maxLength": 20 },
+        "role": { "type": "string", "enum": ["buyer", "admin"] },
+        "city": { "type": "string", "maxLength": 64 },
+        "state": { "type": "string", "maxLength": 64 },
+        "pincode": { "type": "string", "maxLength": 10 },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "Quote": {
+      "title": "Quote",
+      "description": "RFQ or custom quote request",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "companyName": { "type": "string", "maxLength": 128 },
+        "contactName": { "type": "string", "maxLength": 128 },
+        "email": { "type": "string", "maxLength": 128 },
+        "phone": { "type": "string", "maxLength": 20 },
+        "gstin": { "type": "string", "maxLength": 15 },
+        "category": { "type": "string", "maxLength": 64 },
+        "productName": { "type": "string", "maxLength": 128 },
+        "quantity": { "type": "number" },
+        "unit": { "type": "string", "maxLength": 32 },
+        "deliveryLocation": { "type": "string", "maxLength": 128 },
+        "notes": { "type": "string", "maxLength": 500 },
+        "status": { "type": "string", "enum": ["pending", "quoted", "accepted", "rejected"] },
+        "quotedPrice": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "companyName", "email", "category", "productName", "quantity", "status"]
+    },
+    "Order": {
+      "title": "Order",
+      "description": "Placed B2B order record",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "userId": { "type": "string", "maxLength": 128 },
+        "companyName": { "type": "string", "maxLength": 128 },
+        "contactPhone": { "type": "string", "maxLength": 20 },
+        "items": { "type": "array" },
+        "totalAmount": { "type": "number" },
+        "deliveryAddress": { "type": "string", "maxLength": 256 },
+        "pincode": { "type": "string", "maxLength": 10 },
+        "status": { "type": "string", "enum": ["pending", "processing", "shipped", "delivered", "cancelled"] },
+        "paymentMethod": { "type": "string", "maxLength": 64 },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "companyName", "items", "totalAmount", "status"]
+    },
+    "Product": {
+      "title": "Product",
+      "description": "Product catalog item",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "category": { "type": "string", "maxLength": 64 },
+        "name": { "type": "string", "maxLength": 128 },
+        "spec": { "type": "string", "maxLength": 128 },
+        "unit": { "type": "string", "maxLength": 32 },
+        "price": { "type": "number" },
+        "moq": { "type": "string", "maxLength": 64 },
+        "inStock": { "type": "boolean" },
+        "hub": { "type": "string", "maxLength": 128 },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["category", "name", "price"]
+    },
+    "LivePrice": {
+      "title": "LivePrice",
+      "description": "Live commodity mandi spot price",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "category": { "type": "string", "maxLength": 64 },
+        "material": { "type": "string", "maxLength": 128 },
+        "location": { "type": "string", "maxLength": 128 },
+        "price": { "type": "number" },
+        "unit": { "type": "string", "maxLength": 32 },
+        "change": { "type": "string", "maxLength": 32 },
+        "changeType": { "type": "string", "enum": ["up", "down", "neutral"] },
+        "updatedAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["material", "price", "unit"]
+    },
+    "Category": {
+      "title": "Category",
+      "description": "Category vertical with sub-categories",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "maxLength": 128 },
+        "name": { "type": "string", "maxLength": 128 },
+        "subtitle": { "type": "string", "maxLength": 128 },
+        "description": { "type": "string", "maxLength": 256 },
+        "bgImage": { "type": "string", "maxLength": 512 },
+        "items": { "type": "array" }
+      },
+      "required": ["id", "name", "items"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile document indexed by auth UID"
+    },
+    "/quotes/{quoteId}": {
+      "schema": "Quote",
+      "description": "Quotations submitted by enterprise buyers"
+    },
+    "/orders/{orderId}": {
+      "schema": "Order",
+      "description": "Orders placed by enterprise buyers"
+    },
+    "/products/{productId}": {
+      "schema": "Product",
+      "description": "Catalog products editable by admin and read by buyers"
+    },
+    "/categories/{categoryId}": {
+      "schema": "Category",
+      "description": "Categories and sub-categories managed by admin and read across site"
+    },
+    "/livePrices/{priceId}": {
+      "schema": "LivePrice",
+      "description": "Commodity market spot prices editable by admin and read by buyers"
+    }
+  }
+}

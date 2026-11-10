@@ -1,0 +1,207 @@
+{
+  "rfqs": [
+    {
+      "id": "BME-RFQ-849201",
+      "companyName": "Shapoorji Pallonji EPC Infra",
+      "buyerName": "Vikram Sethi",
+      "phone": "+91 98201 44512",
+      "email": "v.sethi@shapoorji.com",
+      "category": "Metals",
+      "material": "TMT Bar (Fe 550D 16mm)",
+      "quantityMT": 450,
+      "destinationCity": "Delhi NCR",
+      "pinCode": "110037",
+      "paymentMode": "credit",
+      "estimatedValue": 24525000,
+      "submittedAt": "2026-10-31 09:15",
+      "status": "Reviewing",
+      "notes": "Direct rake allocation requested for Dwarka Expressway Package 4."
+    },
+    {
+      "id": "BME-RFQ-918234",
+      "companyName": "Gujarat Heavy Chemicals Ltd",
+      "buyerName": "Anand Patel",
+      "phone": "+91 98791 22340",
+      "email": "apatel@ghcl.co.in",
+      "category": "Chemicals",
+      "material": "Pure Methanol Industrial Grade",
+      "quantityMT": 120,
+      "destinationCity": "Ahmedabad",
+      "pinCode": "380009",
+      "paymentMode": "cash",
+      "estimatedValue": 3420000,
+      "submittedAt": "2026-10-31 10:40",
+      "status": "Quoted",
+      "notes": "Delivered price with ISO tanker transport included."
+    },
+    {
+      "id": "BME-RFQ-773412",
+      "companyName": "Orient Cement & Power Works",
+      "buyerName": "Suresh Singhal",
+      "phone": "+91 94250 88714",
+      "email": "singhal@orientcement.org",
+      "category": "Energy & Minerals",
+      "material": "Imported Petcoke (0.5% S)",
+      "quantityMT": 1500,
+      "destinationCity": "Raipur",
+      "pinCode": "492001",
+      "paymentMode": "credit",
+      "estimatedValue": 24600000,
+      "submittedAt": "2026-10-31 11:20",
+      "status": "Pending",
+      "notes": "Discharge from Kandla port terminal, SGS sampling required."
+    },
+    {
+      "id": "BME-RFQ-654129",
+      "companyName": "L&T Heavy Engineering",
+      "buyerName": "K. Radhakrishnan",
+      "phone": "+91 98401 77610",
+      "email": "k.radha@larsentoubro.com",
+      "category": "Metals",
+      "material": "Beam (200×100mm E250 BR)",
+      "quantityMT": 280,
+      "destinationCity": "Chennai",
+      "pinCode": "600001",
+      "paymentMode": "credit",
+      "estimatedValue": 17080000,
+      "submittedAt": "2026-10-30 16:30",
+      "status": "Approved",
+      "notes": "PO issued, weighbridge slips attached to dispatch."
+    },
+    {
+      "id": "BME-RFQ-528990",
+      "companyName": "National Highway Paving Corp",
+      "buyerName": "Harpreet Singh",
+      "phone": "+91 98140 33910",
+      "email": "hsingh@nhpaving.in",
+      "category": "Chemicals",
+      "material": "Bitumen VG30 (Packed Drums)",
+      "quantityMT": 85,
+      "destinationCity": "Mandi Gobindgarh",
+      "pinCode": "147301",
+      "paymentMode": "cash",
+      "estimatedValue": 1317500,
+      "submittedAt": "2026-10-30 14:10",
+      "status": "Dispatched",
+      "notes": "Truck trailer PB-23-T-4911 GPS tracked, ETA 18 hours."
+    }
+  ],
+  "creditApplications": [
+    {
+      "id": "CRE-2026-081",
+      "companyName": "Apex Mega Infrastructure Projects",
+      "gstin": "07AAACA1948L1ZQ",
+      "annualTurnoverCr": 420,
+      "requestedCreditCr": 5.0,
+      "approvedCreditCr": 4.5,
+      "tenorDays": 60,
+      "cibilCommercialScore": 812,
+      "status": "Approved",
+      "appliedDate": "2026-10-28"
+    },
+    {
+      "id": "CRE-2026-094",
+      "companyName": "Vardhman Forgings Pvt Ltd",
+      "gstin": "03AABCV1049B1Z2",
+      "annualTurnoverCr": 85,
+      "requestedCreditCr": 2.0,
+      "approvedCreditCr": 1.5,
+      "tenorDays": 45,
+      "cibilCommercialScore": 765,
+      "status": "Under Review",
+      "appliedDate": "2026-10-30"
+    },
+    {
+      "id": "CRE-2026-102",
+      "companyName": "Zenith Chemicals & Resins Ltd",
+      "gstin": "24AAACZ4921K1ZZ",
+      "annualTurnoverCr": 140,
+      "requestedCreditCr": 3.5,
+      "approvedCreditCr": 0,
+      "tenorDays": 60,
+      "cibilCommercialScore": 740,
+      "status": "Pending",
+      "appliedDate": "2026-10-31"
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "SUP-101",
+      "name": "Bable Structural & TMT Rolling Facility",
+      "type": "Steel Rolling Mill",
+      "location": "Raipur, Chhattisgarh",
+      "annualCapacity": "450,000 MT",
+      "rating": 4.9,
+      "status": "Active",
+      "materialsSupplied": ["TMT Bar Fe 550D", "MS Beams", "MS Angles", "Wire Rods"]
+    },
+    {
+      "id": "SUP-102",
+      "name": "Kandla Maritime Minerals Terminal",
+      "type": "Port Terminal",
+      "location": "Kandla SEZ, Gujarat",
+      "annualCapacity": "1,200,000 MT",
+      "rating": 4.8,
+      "status": "Active",
+      "materialsSupplied": ["US Petcoke", "Indonesian Steam Coal", "Dolomite"]
+    },
+    {
+      "id": "SUP-103",
+      "name": "Dahej Petrochem Tank Farm & Processing",
+      "type": "Petrochemical Refinery",
+      "location": "Dahej PCPIR, Gujarat",
+      "annualCapacity": "85,000 KL",
+      "rating": 4.9,
+      "status": "Active",
+      "materialsSupplied": ["Bitumen VG30", "Bitumen VG40", "Methanol", "Caustic Soda"]
+    },
+    {
+      "id": "SUP-104",
+      "name": "Bellary Sponge Iron & DRI Complex",
+      "type": "Mineral Mine",
+      "location": "Toranagallu, Bellary, Karnataka",
+      "annualCapacity": "350,000 MT",
+      "rating": 4.7,
+      "status": "Active",
+      "materialsSupplied": ["Iron Ore Pellets", "Sponge Iron", "Sinter Fines"]
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "LOG-9921",
+      "timestamp": "2026-10-31 13:45:10",
+      "adminName": "Aditya Sharma (Super Admin)",
+      "action": "Updated TMT Bar (Fe 550D) base price to ₹54,500/MT",
+      "category": "PRICING",
+      "ipAddress": "103.21.144.12",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "LOG-9920",
+      "timestamp": "2026-10-31 12:30:22",
+      "adminName": "Pooja Verma (Risk Officer)",
+      "action": "Approved ₹4.5 Cr credit line for Apex Mega Infra (60-day tenor)",
+      "category": "CREDIT",
+      "ipAddress": "103.21.144.15",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "LOG-9919",
+      "timestamp": "2026-10-31 11:45:00",
+      "adminName": "Vikram Malhotra (Procurement Head)",
+      "action": "Changed RFQ BME-RFQ-654129 status to APPROVED",
+      "category": "RFQ",
+      "ipAddress": "182.72.68.90",
+      "status": "SUCCESS"
+    },
+    {
+      "id": "LOG-9918",
+      "timestamp": "2026-10-31 09:00:15",
+      "adminName": "Aditya Sharma (Super Admin)",
+      "action": "2FA Authenticated Login Session Established",
+      "category": "AUTH",
+      "ipAddress": "103.21.144.12",
+      "status": "SUCCESS"
+    }
+  ]
+}

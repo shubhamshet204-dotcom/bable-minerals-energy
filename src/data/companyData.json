@@ -1,0 +1,203 @@
+{
+  "company": {
+    "name": "Bable Minerals and Energy Pvt Ltd",
+    "shortName": "Bable",
+    "legalName": "Bable Minerals and Energy Private Limited",
+    "tagline": "India's Leading B2B Commerce Platform for Industrial Raw Materials & Energy",
+    "badgeText": "Powered by In-House Technology",
+    "headlinePrefix": "Powering Industrial Growth",
+    "headlineHighlight": "B2B Raw Material & Energy Marketplace",
+    "subheadline": "Procure Metals, Chemicals, Energy & Minerals directly from top manufacturers with transparent live market prices, end-to-end multimodal logistics, and flexible working capital financing.",
+    "cin": "U13100DL2021PTC384910",
+    "gstin": "07AAACB4492M1ZN",
+    "belagaviOffice": "Belagavi, Karnataka, India",
+    "phone": "+91 87920 87909",
+    "tollFree": "+91 87920 87909",
+    "email": "bableminerals.sales@gmail.com",
+    "salesEmail": "bableminerals.sales@gmail.com",
+    "supportEmail": "bableminerals.sales@gmail.com"
+  },
+  "search": {
+    "cyclingPlaceholders": [
+      "Search for Processed Food & Edible Oils...",
+      "Search for Fe 550D TMT Bars & Structural Steel...",
+      "Search for US Gulf Petcoke & Steam Coal...",
+      "Search for Bitumen VG30 & Industrial Solvents...",
+      "Search for Caustic Soda Lye & Methanol...",
+      "Search for Iron Ore Pellets & High-Grade Limestone..."
+    ],
+    "quickChips": [
+      { "id": "coal", "label": "Coal", "category": "energy-minerals" },
+      { "id": "petcoke", "label": "Petcoke", "category": "energy-minerals" },
+      { "id": "limestone", "label": "Limestone", "category": "energy-minerals" },
+      { "id": "iron-ore", "label": "Iron Ore", "category": "energy-minerals" },
+      { "id": "methanol", "label": "Methanol", "category": "chemicals" },
+      { "id": "pvc", "label": "PVC", "category": "chemicals" },
+      { "id": "ingots", "label": "Ingots", "category": "metals" },
+      { "id": "bitumen", "label": "Bulk Bitumen", "category": "chemicals" }
+    ]
+  },
+  "heroActionCards": [
+    {
+      "id": "procurement",
+      "title": "Procurement Platform",
+      "subtitle": "Raw Materials",
+      "description": "Direct access to 8,000+ verified mills, mines, and refineries across 4 core industrial verticals with guaranteed delivery schedules.",
+      "icon": "Truck",
+      "accentColor": "from-teal-500 to-blue-600",
+      "bgLight": "bg-teal-50/70 border-teal-200",
+      "ctaText": "Explore Raw Materials",
+      "active": true
+    },
+    {
+      "id": "financing",
+      "title": "Smart Financing",
+      "subtitle": "Working Capital",
+      "description": "Collateral-free trade credit lines up to ₹10 Crore with flexible 30-90 day tenor directly integrated into your material purchases.",
+      "icon": "Wallet",
+      "accentColor": "from-blue-600 to-indigo-600",
+      "bgLight": "bg-blue-50/70 border-blue-200",
+      "ctaText": "Check Credit Eligibility",
+      "active": false
+    },
+    {
+      "id": "revenue",
+      "title": "Revenue Generation",
+      "subtitle": "Discovery & Analytics",
+      "description": "Real-time mandi and commodity spot index intelligence, demand aggregation, and tender discovery to maximize plant margins.",
+      "icon": "TrendingUp",
+      "accentColor": "from-amber-500 to-orange-600",
+      "bgLight": "bg-amber-50/70 border-amber-200",
+      "ctaText": "Access Market Intelligence",
+      "active": false
+    }
+  ],
+  "stats": [
+    {
+      "id": "gmv",
+      "value": "35,000",
+      "prefix": "₹",
+      "suffix": "+ Cr",
+      "label": "Annual GMV Transacted",
+      "description": "Trusted by Fortune 500 infra firms and high-growth MSMEs"
+    },
+    {
+      "id": "buyers",
+      "value": "15,000",
+      "prefix": "",
+      "suffix": "+",
+      "label": "Active Industrial Buyers",
+      "description": "Engineering, EPC contractors, forging, pharma & textile plants"
+    },
+    {
+      "id": "delivery",
+      "value": "98.6",
+      "prefix": "",
+      "suffix": "%",
+      "label": "On-Time Delivery SLA",
+      "description": "Live GPS tracking with in-transit weighbridge reconciliation"
+    },
+    {
+      "id": "hubs",
+      "value": "45",
+      "prefix": "",
+      "suffix": "+ Hubs",
+      "label": "Stocking & Distribution Hubs",
+      "description": "Pan-India bonded terminals, port yards, and central warehouses"
+    }
+  ],
+  "whyChooseUs": [
+    {
+      "id": "transparent-pricing",
+      "title": "Real-Time Transparent Pricing",
+      "description": "No hidden distributor margins. Access live mill-gate quotes, EXW and FOR rates backed by benchmark indexes updated hourly.",
+      "icon": "Scale",
+      "tag": "Zero Markup"
+    },
+    {
+      "id": "quality-assurance",
+      "title": "NABL Lab Quality Assurance",
+      "description": "Every single consignment arrives with certified mill test reports (MTR), chemical composition spectrometry, and physical batch assays.",
+      "icon": "ShieldCheck",
+      "tag": "100% Tested"
+    },
+    {
+      "id": "credit-financing",
+      "title": "Instant Working Capital",
+      "description": "Fast-track unsecured procurement credit lines from RBI-licensed NBFC and banking partners with interest calculated per day of use.",
+      "icon": "Coins",
+      "tag": "30-90 Day Terms"
+    },
+    {
+      "id": "multimodal-logistics",
+      "title": "End-to-End Multimodal Logistics",
+      "description": "Dedicated fleet of specialized heavy tippers, ISO tankers, and container rake rakes ensuring zero transit pilferage.",
+      "icon": "Boxes",
+      "tag": "Pan-India Reach"
+    }
+  ],
+  "howItWorks": [
+    {
+      "step": "01",
+      "title": "Select Specification & Volume",
+      "description": "Search our catalog of 200+ raw materials or submit custom metallurgical and chemical grade requirements."
+    },
+    {
+      "step": "02",
+      "title": "Instant Lock-in & Quotation",
+      "description": "Get transparent spot quotes with real-time freight simulation for your delivery pin code within 60 seconds."
+    },
+    {
+      "step": "03",
+      "title": "Flexible Payment or Credit",
+      "description": "Pay seamlessly through instant RTGS escrow or utilize pre-approved Bable Trade Credit with 0% advance."
+    },
+    {
+      "step": "04",
+      "title": "Direct Dispatch & Test Certs",
+      "description": "Track consignment GPS in real time and download computerized weighbridge slips & lab certificates directly from your portal."
+    }
+  ],
+  "manufacturingUnits": [
+    {
+      "id": "unit-1",
+      "name": "Bable Structural & TMT Rolling Facility",
+      "location": "Raipur Industrial Corridor, Chhattisgarh",
+      "capacity": "450,000 MT/Year",
+      "specialty": "Fe 550D TMT, Heavy MS Angles & Channels, Billet casting",
+      "certifications": ["BIS IS:1786", "ISO 9001:2015", "GreenPro Certified"]
+    },
+    {
+      "id": "unit-2",
+      "name": "Kandla Maritime Minerals Stockyard & Terminal",
+      "location": "Kandla Special Economic Zone, Gujarat",
+      "capacity": "1,200,000 MT/Year Storage",
+      "specialty": "Screened Indonesian Coal, High-grade US Petcoke, Limestone sizing",
+      "certifications": ["Customs Bonded Area", "Direct Rake Loading"]
+    },
+    {
+      "id": "unit-3",
+      "name": "Dahej Petrochemical Storage & Blending Unit",
+      "location": "PCPIR Region, Dahej, Gujarat",
+      "capacity": "85,000 KL Tank Farm",
+      "specialty": "Solvents, Bitumen VG30 & VG40 Emulsions, Caustic Soda",
+      "certifications": ["PESO Approved", "ISO 14001:2015", "NABL Lab Attached"]
+    },
+    {
+      "id": "unit-4",
+      "name": "Mandi Gobindgarh Secondary Steel Processing Center",
+      "location": "Mandi Gobindgarh, Punjab",
+      "capacity": "280,000 MT/Year",
+      "specialty": "Precision Bright Bars, Cold Drawn Steel, Alloy Billets",
+      "certifications": ["Automotive Grade Certified", "Zero Defect Guarantee"]
+    },
+    {
+      "id": "unit-5",
+      "name": "Bellary Sponge Iron & DRI Processing Complex",
+      "location": "Toranagallu, Bellary, Karnataka",
+      "capacity": "350,000 MT/Year",
+      "specialty": "High Fe 80%+ Sponge Iron, Iron Ore Pellet beneficiation",
+      "certifications": ["High-grade CCS Assayed", "Dedicated Railway Siding"]
+    }
+  ]
+}

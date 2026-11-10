@@ -1,0 +1,102 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    
+    function isValidId(id) {
+      return id is string && id.size() <= 128 && id.matches('^[a-zA-Z0-9_\\-]+$');
+    }
+
+    function isOwner(userId) {
+      return isSignedIn() && request.auth.uid == userId;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && (
+        exists(/databases/$(database)/documents/admins/$(request.auth.uid)) ||
+        (exists(/databases/$(database)/documents/users/$(request.auth.uid)) && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == "admin") ||
+        (request.auth.token.email != null && (
+          request.auth.token.email.lower() == "neurosucess@gmail.com" ||
+          request.auth.token.email.lower() == "bableminerals.sales@gmail.com" ||
+          request.auth.token.email.lower().endsWith("@bableminerals.com")
+        ))
+      );
+    }
+
+    function incoming() {
+      return request.resource.data;
+    }
+
+    function existing() {
+      return resource.data;
+    }
+
+    // Default deny catch-all
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Users Collection
+    match /users/{userId} {
+      allow get: if isOwner(userId) || isAdmin();
+      allow list: if isAdmin();
+      allow create: if isSignedIn() && request.auth.uid == userId
+                    && incoming().keys().hasAll(['uid', 'email', 'role'])
+                    && incoming().uid == request.auth.uid;
+      allow update: if (isOwner(userId) || isAdmin())
+                    && incoming().uid == existing().uid;
+      allow delete: if isAdmin();
+    }
+
+    // Quotes Collection
+    match /quotes/{quoteId} {
+      allow get: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if isSignedIn()
+                    && incoming().userId == request.auth.uid
+                    && incoming().keys().hasAll(['userId', 'companyName', 'email', 'category', 'productName', 'quantity', 'status']);
+      allow update: if isSignedIn() && (
+        (resource.data.userId == request.auth.uid && incoming().userId == resource.data.userId) ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Orders Collection
+    match /orders/{orderId} {
+      allow get: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow list: if isSignedIn() && (resource.data.userId == request.auth.uid || isAdmin());
+      allow create: if isSignedIn()
+                    && incoming().userId == request.auth.uid
+                    && incoming().keys().hasAll(['userId', 'companyName', 'items', 'totalAmount', 'status']);
+      allow update: if isSignedIn() && (
+        (resource.data.userId == request.auth.uid && incoming().userId == resource.data.userId) ||
+        isAdmin()
+      );
+      allow delete: if isAdmin();
+    }
+
+    // Products Collection (Public Read & Catalog Management)
+    match /products/{productId} {
+      allow read, write: if true;
+    }
+
+    // Categories Collection (Public Read & Real-time Sub-Category Management)
+    match /categories/{categoryId} {
+      allow read, write: if true;
+    }
+
+    // Live Prices Collection (Public Read & Marquee Sync)
+    match /livePrices/{priceId} {
+      allow read, write: if true;
+    }
+
+    // Admins helper collection
+    match /admins/{adminUid} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
